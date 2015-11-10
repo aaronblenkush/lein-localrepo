@@ -115,8 +115,7 @@
   (aether/install :local-repo (assert-dir repo-path)
                   :coordinates [(symbol artifact-id) version]
                   :jar-file (jio/file (assert-file filename))
-                  :pom-file (assert-file pom-filename))
-  (main/exit 0))
+                  :pom-file (assert-file pom-filename)))
 
 
 (defn c-install
